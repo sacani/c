@@ -1,4 +1,3 @@
-//prueba
 #include<string.h>
 #include "read_cmd.h"
 #include "execute.h"
