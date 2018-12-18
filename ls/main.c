@@ -1,2 +1,2 @@
 #include<stdio.h>
-main(int argc,
+main(int argc,char*argv[]
