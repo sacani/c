@@ -1,0 +1,1 @@
+int passstring(char*s);
