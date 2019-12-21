@@ -1,9 +1,9 @@
 #include<stdio.h>
 #include<string.h>
-int main(int a,char**v){
+int token(char*s){
 char*t;
 char*c;
-c=strdup(v[1]);
+c=strdup(s);
 t=strsep(&c," ");
 do{
   fprintf(stdout,"%s\n",t);
