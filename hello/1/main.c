@@ -1,13 +1,11 @@
 #include<stdio.h>
 #include "repl.h"
-int main(int argc,char**argv){
-switch(argc){
-  case 1:
-    repl(stdin,stdout);
-    break;
-  case 2:
-    repl(fopen(argv[1],"r"),stdout);
-    break;
+int main(int c,char**v){
+FILE*i;
+switch(c){
+  case 1:i=stdin;break;
+  case 2:i=fopen(v[1],"r");break;
 }
+repl(i);
 return 0;
 }

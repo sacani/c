@@ -1,5 +1,5 @@
 #include<stdio.h>
-int hello(FILE*o){
-fprintf(o,"hello\n");
+int hello(){
+fprintf(stdout,"hello\n");
 return 0;
 }

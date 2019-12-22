@@ -1,1 +1,1 @@
-int hello(FILE*o);
+int hello();
