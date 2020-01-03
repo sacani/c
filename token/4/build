@@ -1,0 +1,3 @@
+C_INCLUDE_PATH=$HOME/c/include
+PATH=$HOME/c/bin:$PATH
+cc -static -o ~/token main.c repl.c readline.c token.c help.c
