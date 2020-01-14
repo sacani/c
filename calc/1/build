@@ -1,0 +1,1 @@
+cc -o ~/calc main.c repl.c readline.c help.c add.c
