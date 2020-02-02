@@ -1,0 +1,9 @@
+qemu-system-i386 \
+-M pc \
+-m 64 \
+-kernel vmlinuz \
+-initrd core.gz \
+-append "console=ttyS0" \
+-hda hdd \
+-serial mon:stdio \
+-nographic

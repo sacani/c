@@ -1,0 +1,9 @@
+qemu-system-i386 \
+-M pc \
+-m 64 \
+-kernel vmlinuz \
+-initrd score.gz \
+-append "console=ttyS1" \
+-hda hdd \
+-serial mon:stdio \
+-nographic

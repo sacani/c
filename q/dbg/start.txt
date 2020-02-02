@@ -1,0 +1,8 @@
+qemu-system-i386 \
+-M isapc \
+-m 1 \
+-hda hdd \
+-hdb fat:rw:./d \
+-serial mon:stdio \
+-nographic \
+-boot c 

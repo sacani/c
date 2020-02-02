@@ -1,0 +1,7 @@
+qemu-system-i386 \
+-M pc \
+-m 64 \
+-hda hdd \
+-boot c \
+-serial mon:stdio \
+-nographic

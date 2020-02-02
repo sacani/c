@@ -1,0 +1,8 @@
+qemu-system-i386 \
+-M pc \
+-m 64 \
+-hda hdd \
+-cdrom iso \
+-net nic,model=e1000 \
+-net user,hostfwd=::1025-:1025 \
+-boot d
