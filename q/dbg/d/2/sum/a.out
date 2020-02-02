@@ -1,0 +1,25 @@
+-a100
+1522:0100 mov ah,1
+1522:0102 int 21
+1522:0104 sub al,30
+1522:0106 mov [11f],al
+1522:0109 mov ah,1
+1522:010B int 21
+1522:010D sub al,30
+1522:010F add al,[11f]
+1522:0113 mov dl,al
+1522:0115 add dl,30
+1522:0118 mov ah,2
+1522:011A int 21
+1522:011C ret
+1522:011D 
+-rbx
+BX 0000
+:0
+-rcx
+CX 0000
+:1e
+-na.com
+-w
+Writing 0001E bytes
+-q

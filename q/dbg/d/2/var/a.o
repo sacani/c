@@ -1,0 +1,27 @@
+-a100
+1522:0100 mov ah,9
+1522:0102 mov dx,109
+1522:0105 int 21
+1522:0107 jmp 11a
+1522:0109 db 'Crea Muestra Sal$'
+1522:011A mov ah,1
+1522:011C int 21
+1522:011E cmp al,63
+1522:0120 je 12c
+1522:0122 cmp al,6d
+1522:0124 je 12c
+1522:0126 cmp al,73
+1522:0128 je 12c
+1522:012A jmp 100
+1522:012C ret
+1522:012D 
+-rbx
+BX 0000
+:0
+-rcx
+CX 0000
+:2d
+-na.com
+-w 
+Writing 0002D bytes
+-q

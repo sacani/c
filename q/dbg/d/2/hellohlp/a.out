@@ -1,0 +1,35 @@
+-a100
+1522:0100 mov di,80;offset args psp
+1522:0103 mov cl,[di]
+1522:0105 inc di
+1522:0106 xor ch,ch
+1522:0108 mov al,2f
+1522:010A repne scasb
+1522:010C jnz 124
+1522:010E cmp byte[di],3f
+1522:0111 je 11f
+1522:0113 cmp byte[di],48
+1522:0116 je 11f
+1522:0118 cmp byte[di],68
+1522:011B je 11f
+1522:011D jnz 124
+1522:011F mov dx,130
+1522:0122 jmp 127
+1522:0124 mov dx,15d
+1522:0127 mov ah,9
+1522:0129 int 21
+1522:012B mov ax,4c00
+1522:012E int 21
+1522:0130 db 'Este programa muestra hola mundo en pantalla$'
+1522:015D db 'hola mundo$'
+1522:0168 
+-rbx
+BX 0000
+:0
+-rcx
+CX 0000
+:68
+-na.com
+-w
+Writing 00068 bytes
+-q

@@ -1,0 +1,17 @@
+-a100
+1522:0100 mov ah,9
+1522:0102 mov dx,108
+1522:0105 int 21
+1522:0107 ret
+1522:0108 db 'Crea Muestra Sal$'
+1522:0119 
+-rbx
+BX 0000
+:0
+-rcx
+CX 0000
+:19
+-na.com
+-w
+Writing 00019 bytes
+-q

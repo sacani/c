@@ -1,0 +1,18 @@
+a100
+mov bx,82
+cmp byte[bx],d
+jz 111
+mov ah,6
+mov dx,[bx]
+int 21
+inc bx
+jmp 103
+ret
+
+rbx
+0
+rcx
+12
+na.com
+w
+q

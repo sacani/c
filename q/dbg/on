@@ -1,0 +1,8 @@
+e \
+-L /sdcard/.f \
+-M isapc \
+-m 1 \
+-hda hdd \
+-hdb fat:rw:./d \
+-vnc :0 \
+-boot c 

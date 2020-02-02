@@ -1,0 +1,33 @@
+a100
+mov di,80;offset args psp
+mov cl,[di];recoge # char cadena args
+inc di;apunta cadena
+xor ch,ch;cx=cl
+mov al,2f;al=/
+repne scasb;
+jnz 124;no / salta 124
+cmp byte[di],3f;?
+je 11f
+cmp byte[di],48;H
+je 11f
+cmp byte[di],68;h
+je 11f
+jnz 124
+mov dx,130
+jmp 127
+mov dx,15d
+mov ah,9
+int 21
+mov ax,4c00
+int 21
+db 'Este programa muestra hola mundo en pantalla$'
+db 'hola mundo$'
+
+rbx
+0
+rcx
+68
+na.com
+w
+q
+

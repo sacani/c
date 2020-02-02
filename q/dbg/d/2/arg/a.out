@@ -1,0 +1,21 @@
+-a100
+1522:0100 mov bx,82
+1522:0103 cmp byte[bx],d
+1522:0106 jz 111
+1522:0108 mov ah,6
+1522:010A mov dx,[bx]
+1522:010C int 21
+1522:010E inc bx
+1522:010F jmp 103
+1522:0111 ret
+1522:0112 
+-rbx
+BX 0000
+:0
+-rcx
+CX 0000
+:12
+-na.com
+-w
+Writing 00012 bytes
+-q

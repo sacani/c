@@ -1,0 +1,23 @@
+a100
+mov ah,1
+int 21
+sub al,30
+mov [11f],al
+mov ah,1
+int 21
+sub al,30
+add al,[11f]
+mov dl,al
+add dl,30
+mov ah,2
+int 21
+ret
+
+rbx
+0
+rcx
+1e
+na.com
+w
+q
+

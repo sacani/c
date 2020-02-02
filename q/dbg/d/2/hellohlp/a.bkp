@@ -1,0 +1,33 @@
+a100
+mov di,80
+mov cl,[di]
+inc di
+xor ch,ch
+mov al,2f
+repne scasb
+jnz 124
+cmp [di],3f
+je 11f
+cmp [di],48
+je 11f
+cmp [di],68
+je 11f
+jnz 124
+mov dx,130
+jmp 127
+mov dx,150
+mov ah,9
+int 21
+mov ax,4c00
+int 21
+db 'Este programa muestra hola mundo en pantalla$'
+db 'hola mundo$'
+
+rbx
+0
+rcx
+1f
+na.com
+w
+q
+
