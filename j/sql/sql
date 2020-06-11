@@ -1,0 +1,3 @@
+#export JDBC=sim/termopilas69@localhost:1532/dsim
+java -class
+
